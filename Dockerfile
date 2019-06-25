@@ -10,7 +10,7 @@ RUN echo "christian:christian" | chpasswd && adduser christian sudo
 #COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 #CMD ["echo","das ist der neue cmd"]
 ENTRYPOINT ["sh", "/docker-entrypoint.sh"]
-RUN apt-get install -y expect spawn
+RUN apt-get install -y expect spawn-fcgi
 #RUN echo "christian  ALL=(ALL:ALL) ALL" >> /etc/sudoers
 USER christian
 #RUN /usr/bin/mysqld_safe --basedir=/usr & sleep 5s \ 
