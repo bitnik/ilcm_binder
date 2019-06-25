@@ -5,7 +5,9 @@ USER root
 COPY docker-entrypoint.sh /
 Run chmod -R 777 /home/christian/
 RUN echo "christian:christian" | chpasswd && adduser christian sudo
-RUN echo "hallo hallo"
+RUN apt-get install -y supervisor
+RUN mkdir -p /var/log/supervisor
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 #CMD ["echo","das ist der neue cmd"]
 ENTRYPOINT ["sh", "/docker-entrypoint.sh"]
 #RUN echo "christian  ALL=(ALL:ALL) ALL" >> /etc/sudoers
