@@ -1,1 +1,1 @@
-From ckahmann/ilcm_binder:0.97
+From ckahmann/binder_ilcm:0.97
