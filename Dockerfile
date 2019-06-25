@@ -14,6 +14,7 @@ RUN echo "christian:christian" | chpasswd && adduser christian sudo
 ENTRYPOINT ["sh", "/docker-entrypoint.sh"]
 RUN apt-get install -y expect 
 #RUN echo "christian  ALL=(ALL:ALL) ALL" >> /etc/sudoers
+RUN whoami
 USER christian
 #RUN /usr/bin/mysqld_safe --basedir=/usr & sleep 5s \ 
 #  && su christian
