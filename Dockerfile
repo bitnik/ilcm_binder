@@ -7,7 +7,7 @@ RUN echo "christian:christian" | chpasswd && adduser christian sudo
 
 
 RUN apt-get install -y expect 
-
+Copy start_script.sh /home/christian/start_script.sh
 COPY docker-entrypoint.sh /
 Copy expectfile.sh /home/christian/expectfile.sh
 Copy start_services.sh /home/christian/start_services.sh
