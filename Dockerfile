@@ -6,4 +6,4 @@ RUN echo "christian:christian" | chpasswd && adduser christian sudo
 #CMD ["echo","das ist der neue cmd"]
 ENTRYPOINT ["sh", "/docker-entrypoint.sh"]
 
-USER christian
+USER docker
