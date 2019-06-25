@@ -1,8 +1,6 @@
 From ckahmann/testbinder2:latest
 USER root
 
-ENV USER ${NB_USER}
-ENV HOME /home/${NB_USER}
 
 COPY docker-entrypoint.sh /
 Run chmod -R 777 /home/christian/
