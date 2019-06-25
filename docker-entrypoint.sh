@@ -1,8 +1,7 @@
 #!/bin/bash
 set -e
-ps -A > /home/christian/davor.txt
-/home/christian/expectfile.sh docker > /home/christian/mittendrin.txt
-ps -A > /home/christian/danach.txt
+
+jupyter-notebook --ip 0.0.0.0
 
 exec "$@"
 	
