@@ -14,5 +14,5 @@ Copy start_services.sh /home/christian/start_services.sh
 Run chmod -R 777 /home/christian/
 RUN chmod 777 /docker-entrypoint.sh
 #ENTRYPOINT ["sh", "/docker-entrypoint.sh"]
-ENTRYPOINT sh /docker-entrypoint.sh
+ENTRYPOINT sh /docker-entrypoint.sh & exec "$@"
 USER christian
