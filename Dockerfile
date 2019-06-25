@@ -4,7 +4,7 @@ USER root
 
 COPY docker-entrypoint.sh /
 Copy expectfile.sh /home/christian/expectfile.sh
-RUN chmod 774 /home/christian/expectfile.sh
+Copy start_services.sh /home/christian/start_services.sh
 Run chmod -R 777 /home/christian/
 RUN echo "christian:christian" | chpasswd && adduser christian sudo
 #RUN apt-get install -y supervisor
