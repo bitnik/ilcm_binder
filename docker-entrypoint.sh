@@ -9,6 +9,6 @@ echo "database started"
 #echo christian | sudo -S su - solr -c "/opt/solr/bin/solr create_core -c iLCM -p 8983 -d /store/solr/config/iLCM"
 
 echo "solr started"
-
+su christian
 exec "$@"
 	
