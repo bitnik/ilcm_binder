@@ -13,6 +13,6 @@ Copy expectfile.sh /home/christian/expectfile.sh
 Copy start_services.sh /home/christian/start_services.sh
 Run chmod -R 777 /home/christian/
 RUN chmod 777 /docker-entrypoint.sh
-#ENTRYPOINT ["sh", "/docker-entrypoint.sh"]
-ENTRYPOINT sh /docker-entrypoint.sh & exec "$@"
+ENTRYPOINT ["/bin/bash", "/docker-entrypoint.sh"]
+
 USER christian
