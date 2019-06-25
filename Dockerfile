@@ -9,6 +9,6 @@ RUN echo "hallo hallo"
 #CMD ["echo","das ist der neue cmd"]
 ENTRYPOINT ["sh", "/docker-entrypoint.sh"]
 #RUN echo "christian  ALL=(ALL:ALL) ALL" >> /etc/sudoers
-USER christian
+#USER christian
 #RUN /usr/bin/mysqld_safe --basedir=/usr & sleep 5s \ 
 #  && su christian
