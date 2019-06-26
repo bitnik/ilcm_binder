@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
-#/expectfile.sh docker
+/expectfile.sh ilcm
 exec "$@"
 	
