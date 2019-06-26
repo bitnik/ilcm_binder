@@ -1,10 +1,11 @@
 From ckahmann/ilcm_binder_basis:0.97
 USER root
 
-COPY start_script.sh /ilcm/start_script.sh
+COPY start_script.sh /
 COPY docker-entrypoint.sh /
-COPY expectfile.sh /home/ilcm/expectfile.sh
-COPY start_services.sh /christian/start_services.sh
+COPY expectfile.sh /
+COPY start_services.sh /
+
 Run chmod -R 777 /home/ilcm/
 RUN chmod 777 /docker-entrypoint.sh
 RUN chmod 777 /start_script.sh
