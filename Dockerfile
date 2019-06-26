@@ -9,6 +9,6 @@ Run chmod -R 777 /home/ilcm/
 RUN chmod 777 /docker-entrypoint.sh
 RUN chmod 777 /start_services.sh
 RUN chmod 777 /expectfile.sh
-ENTRYPOINT ["/docker-entrypoint.sh"]
+#ENTRYPOINT ["/docker-entrypoint.sh"]
 
 USER ilcm
