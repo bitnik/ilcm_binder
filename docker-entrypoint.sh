@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
-
-/home/christian/expectfile.sh docker
-
+ps -A > davor.txt
+/home/christian/expectfile.sh docker > mittendrin.txt
+ps -A > danach.txt
 
 exec "$@"
 	
