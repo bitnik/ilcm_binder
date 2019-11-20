@@ -1,6 +1,7 @@
 From ckahmann/ilcm_binder_basis:0.97
 USER root 
 
+Run python3 -m pip install jupyterhub==1.0.0
 
 COPY docker-entrypoint.sh /
 
