@@ -1,7 +1,9 @@
 From ckahmann/ilcm_binder_basis:0.97
-USER root
+USER root 
+
 
 COPY docker-entrypoint.sh /
+
 COPY expectfile.sh /
 COPY start_services.sh /
 
